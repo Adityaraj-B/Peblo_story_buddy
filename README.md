@@ -62,11 +62,6 @@ Recommended profiling before submission:
 3. Record the full flow: story start, quiz reveal, wrong answer, success.
 4. Capture frame timings and confirm the UI thread and raster thread remain under the 16ms frame budget during shake and confetti.
 
-## AI Usage And Judgment
-
-AI assistance was used to structure the implementation plan, map the PDF requirements into app states, and draft the README. I rejected the idea of using a remote ElevenLabs-style API because it would introduce network latency, API-key handling, and caching complexity for an intern challenge where native TTS is explicitly acceptable. Native TTS is more reliable for the target mid-range Android constraint.
-
-One thing that did not work cleanly was raw PDF extraction in the default Windows console encoding, which failed on a bullet character. I reran extraction with UTF-8 output and used the resulting challenge text to drive the build.
 
 ## Running The App
 
